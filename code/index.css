@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+body {
+  background: url(/images/nebula-g96610d260_1920.jpg) no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 18vh;
+  padding: 10px;
+}
+.navbar--links {
+  display: flex;
+}
+.navbar--link {
+  padding: 0 10px;
+  font-size: 1.3em;
+}
+
+.navbar--link > a {
+  color: white;
+  text-decoration: none;
+}
+
+.burger {
+  display: none;
+}
+
+.navbar--logo img {
+  width: 150px;
+  height: 150px;
+  margin-right: 340px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.navbar--reseaux img {
+  width: 50px;
+  height: 50px;
+}
+
+main {
+  width: 100%;
+  height: 82vh;
+  text-align: center;
+  font-size: 2.5em;
+}
+.main-content {
+  padding-top: 13%;
+}
+
+@media screen and (max-width: 1050px) {
+  .navbar--link > a {
+    font-size: 1rem;
+  }
+  .navbar--logo img {
+    margin-right: 250px;
+  }
+  .main-content {
+    padding-top: 18%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar--links {
+    display: none;
+    flex-direction: column;
+    width: 0;
+    height: 50vh;
+    position: absolute;
+    top: 160px;
+    right: 0;
+    background-color: grey;
+  }
+  .open--nav .navbar--links {
+    display: flex;
+    width: 100%;
+    line-height: 70px;
+  }
+
+  .navbar--link > a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: auto;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .navbar--link > a:hover {
+    padding-left: 2rem;
+    letter-spacing: 5px;
+  }
+  .burger {
+    display: block;
+    position: relative;
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  .bar {
+    display: block;
+    width: 45px;
+    height: 4px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+  }
+  .open--nav .bar {
+    width: 0;
+    background: transparent;
+  }
+  .bar::before,
+  .bar::after {
+    content: "";
+    width: 45px;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+  }
+  .bar::before {
+    transform: translateY(-12px);
+  }
+  .open--nav .bar::before {
+    transform: rotate(45deg);
+  }
+  .bar::after {
+    transform: translateY(12px);
+  }
+  .open--nav .bar::after {
+    transform: rotate(-45deg);
+  }
+
+  .main-content {
+    font-size: 0.7em;
+    padding-top: 35%;
+  }
+  .navbar--logo img {
+    margin-right: auto;
+    margin-left: 10px;
+  }
+  .navbar--reseaux {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .navbar--reseaux img {
+    margin-bottom: 10px;
+  }
+}
+/* media effets style en desktop des lien */
+@media screen and (min-width: 768px) {
+  .navbar--link > a::after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: width 0.4s;
+  }
+  .navbar--link:hover > a::after {
+    width: 100%;
+  }
+}
