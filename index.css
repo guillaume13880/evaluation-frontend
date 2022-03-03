@@ -43,6 +43,7 @@ body {
   margin-right: 340px;
   border-radius: 50%;
   border: 2px solid white;
+  opacity: 0.9;
 }
 
 .navbar--reseaux img {
