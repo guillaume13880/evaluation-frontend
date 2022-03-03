@@ -149,7 +149,7 @@ main {
   }
 
   .main-content {
-    font-size: 0.6em;
+    font-size: 0.8em;
     padding-top: 35%;
   }
   .navbar--logo img {
@@ -177,5 +177,12 @@ main {
   }
   .navbar--link:hover > a::after {
     width: 100%;
+  }
+}
+
+/*réglage texte centrale taille mobile*/
+@media screen and (max-width: 450px) {
+  .main-content {
+    font-size: 0.5em;
   }
 }
