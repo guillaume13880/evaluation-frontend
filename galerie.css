@@ -1,0 +1,26 @@
+main {
+  width: 100%;
+  height: 82vh;
+  text-align: center;
+  font-size: 2.5em;
+}
+#listes--categorie {
+  display: flex;
+  justify-content: center;
+}
+.li--categorie {
+  padding: 0 10px;
+  border-right: 2px solid white;
+}
+#content--galerie {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.img--galerie img {
+  width: 450px;
+  height: 600px;
+  margin: 15px;
+  border: 2px solid white;
+  border-radius: 20px;
+}
