@@ -78,7 +78,7 @@ main {
     display: none;
     flex-direction: column;
     width: 0;
-    height: 50vh;
+    height: 70vh;
     position: absolute;
     top: 160px;
     right: 0;
@@ -89,7 +89,9 @@ main {
     width: 100%;
     line-height: 70px;
   }
-
+  .navbar--link {
+    border-bottom: 1px solid white;
+  }
   .navbar--link > a {
     display: block;
     padding: 1rem;
