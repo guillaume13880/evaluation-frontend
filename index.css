@@ -49,6 +49,8 @@ body {
 .navbar--reseaux img {
   width: 50px;
   height: 50px;
+  border: px solid white;
+  border-radius: 5px;
 }
 
 main {
@@ -165,6 +167,8 @@ main {
   }
   .navbar--reseaux img {
     margin-bottom: 10px;
+    width: 40px;
+    height: 40px;
   }
 }
 /* media effets style en desktop des lien */
