@@ -58,6 +58,9 @@ ion-icon {
 }
 
 @media screen and (max-width: 1050px) {
+  #content--galerie {
+    margin-top: 40px;
+  }
   #content--galerie img {
     width: 30vw;
     margin: 5px;
