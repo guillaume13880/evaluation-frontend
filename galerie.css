@@ -22,7 +22,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
 }
 .img--galerie img {
   width: 20vw;
@@ -39,7 +39,6 @@ ion-icon {
   cursor: pointer;
   width: 40px;
   height: 40px;
-  padding: 30px;
 }
 
 /* media effets style en desktop des lien categ galerie */
@@ -58,9 +57,6 @@ ion-icon {
 }
 
 @media screen and (max-width: 1050px) {
-  #content--galerie {
-    margin-top: 40px;
-  }
   #content--galerie img {
     width: 30vw;
     margin: 5px;
@@ -76,7 +72,7 @@ ion-icon {
     margin-top: 20px;
   }
   .categ--links {
-    font-size: 0.6em;
+    font-size: 0.5em;
     margin-top: 50px;
   }
 
@@ -87,6 +83,7 @@ ion-icon {
     width: 40vw;
   }
   ion-icon {
-    padding: 0;
+    width: 30px;
+    height: 30px;
   }
 }

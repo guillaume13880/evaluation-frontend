@@ -158,7 +158,8 @@ main {
   }
   .navbar--logo img {
     margin-right: auto;
-    margin-left: 10px;
+    width: 100px;
+    height: 100px;
   }
   .navbar--reseaux {
     display: flex;
