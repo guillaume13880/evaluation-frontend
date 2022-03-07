@@ -11,6 +11,7 @@
   justify-content: center;
   display: flex;
   flex-direction: row;
+  margin-top: 2%;
 }
 .categ--link {
   margin: 0 10px;
@@ -64,9 +65,6 @@ ion-icon {
   .image--3 {
     display: none;
   }
-  ion-icon {
-    padding: 0;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -84,5 +82,8 @@ ion-icon {
   }
   #content--galerie img {
     width: 40vw;
+  }
+  ion-icon {
+    padding: 0;
   }
 }
