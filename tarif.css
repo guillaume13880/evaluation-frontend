@@ -1,0 +1,15 @@
+.tarifs--content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: lightgray;
+}
+
+.tarif--carte {
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: aqua;
+}
