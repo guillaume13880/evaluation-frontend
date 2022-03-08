@@ -77,7 +77,11 @@ ion-icon {
   }
 
   .categ--link {
-    margin: 0 5px;
+    margin: 1px;
+    border-right: 1px solid white;
+  }
+  .categ--link a {
+    padding-right: 2px;
   }
   #content--galerie img {
     width: 40vw;
