@@ -58,8 +58,11 @@ ion-icon {
 
 @media screen and (max-width: 1050px) {
   #content--galerie img {
-    width: 30vw;
+    width: 50vw;
     margin: 5px;
+  }
+  .image--2 {
+    display: none;
   }
   .image--3 {
     display: none;
@@ -84,10 +87,11 @@ ion-icon {
     padding-right: 2px;
   }
   #content--galerie img {
-    width: 40vw;
+    width: 70vw;
   }
   ion-icon {
     width: 30px;
     height: 30px;
-  }
+    position: relative;
+   z-index: -1;
 }

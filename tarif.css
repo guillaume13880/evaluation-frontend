@@ -47,8 +47,11 @@
 }
 
 @media screen and (max-width: 1050px) {
-  .tarifs--content {
+  #titre--tarif {
     font-size: 0.9em;
+  }
+  .tarifs--content {
+    font-size: 0.7em;
   }
 
   .tarif--carte {
@@ -60,8 +63,11 @@
   }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 768px) {
   #titre--tarif {
-    font-size: 0.9em;
+    font-size: 0.7em;
+  }
+  .tarif--carte {
+    height: 160px;
   }
 }
