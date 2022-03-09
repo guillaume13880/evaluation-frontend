@@ -24,29 +24,6 @@ body {
   cursor: pointer;
 }
 
-#content--galerie {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.img--galerie img {
-  width: 18vw;
-  height: 100%;
-  margin: 10px;
-  border: 2px solid white;
-  border-radius: 20px;
-}
-.img--galerie {
-  flex-wrap: wrap;
-}
-
-ion-icon {
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-}
-
 /* media effets style en desktop des lien categ galerie */
 @media screen and (min-width: 768px) {
   .categ--link > a::after {
@@ -59,16 +36,6 @@ ion-icon {
   }
   .categ--link:hover > a::after {
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 1050px) {
-  #content--galerie img {
-    width: 30vw;
-    margin: 5px;
-  }
-  .image--2 {
-    display: none;
   }
 }
 
@@ -88,17 +55,5 @@ ion-icon {
   }
   .categ--link a {
     padding-right: 2px;
-  }
-  #content--galerie img {
-    width: 230px;
-  }
-  .image--3 {
-    display: none;
-  }
-  ion-icon {
-    width: 30px;
-    height: 30px;
-    position: relative;
-    z-index: -1;
   }
 }
