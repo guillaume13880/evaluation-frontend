@@ -1,6 +1,6 @@
 body {
   background: url(images/background-tarif.jpg) no-repeat;
-  background-size: 1980px 1500px;
+  background-size: 1980px 1600px;
   color: white;
 }
 
@@ -47,10 +47,17 @@ body {
   margin-top: 40px;
   font-size: large;
   border-radius: 30px;
-  background-color: gray;
+  background-color: rgb(114, 114, 136);
   border: 1px solid white;
-  color: white;
   cursor: pointer;
+  font-weight: bold;
+}
+#btn--contact:hover {
+  background-color: rgb(64, 64, 77);
+}
+#btn--contact a {
+  text-decoration: none;
+  color: white;
 }
 
 @media screen and (max-width: 1050px) {
