@@ -1,5 +1,12 @@
+body {
+  background: url(images/background-tarif.jpg) no-repeat;
+  background-size: 1980px 1500px;
+  color: white;
+}
+
 #titre--tarif {
-  font-size: 1.7em;
+  font-size: 1.6em;
+  text-shadow: #fc0 1px 0 10px;
 }
 .tarifs--content {
   display: flex;
@@ -69,5 +76,8 @@
   }
   .tarif--carte {
     height: 160px;
+  }
+  #btn--contact {
+    margin: 10px;
   }
 }

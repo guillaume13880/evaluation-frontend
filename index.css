@@ -8,8 +8,8 @@ ul {
   list-style: none;
 }
 body {
-  background: url(images/background-photographe.jpg) no-repeat;
-  background-size: cover;
+  background: url(images/background-accueil.jpg) no-repeat;
+  background-size: 1980px 1000px;
   color: white;
 }
 
@@ -60,7 +60,8 @@ main {
   font-size: 2.5em;
 }
 .main-content {
-  padding-top: 13%;
+  padding-top: 10%;
+  text-shadow: #fc0 1px 0 10px;
 }
 
 @media screen and (max-width: 1050px) {
@@ -76,6 +77,9 @@ main {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    background-size: cover;
+  }
   .navbar--links {
     display: none;
     flex-direction: column;
