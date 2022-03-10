@@ -13,11 +13,14 @@ body {
   font-size: 3em;
   text-shadow: #fc0 1px 0 10px;
 }
+.navbar--links {
+  z-index: 1;
+}
 .categ--links {
   justify-content: center;
   display: flex;
   flex-direction: row;
-  margin-top: 2%;
+  margin: 20px;
 }
 .categ--link {
   margin: 0 10px;
@@ -28,12 +31,12 @@ body {
   height: 60vh;
   margin: auto;
   position: relative;
-  z-index: -1;
 }
 .slider img {
   object-fit: cover;
   height: 100%;
   width: 100%;
+
   border-radius: 15px;
   border: 2px solid white;
   position: absolute;
