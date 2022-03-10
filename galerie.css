@@ -23,6 +23,40 @@ body {
   margin: 0 10px;
   cursor: pointer;
 }
+.slider {
+  width: 80%;
+  height: 60vh;
+  margin: auto;
+  position: relative;
+}
+.slider img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.slider img.active {
+  opacity: 1;
+}
+.suivant,
+.precedent {
+  color: white;
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.suivant {
+  right: 1rem;
+}
+.precedent {
+  left: 1rem;
+}
 
 /* media effets style en desktop des lien categ galerie */
 @media screen and (min-width: 768px) {
