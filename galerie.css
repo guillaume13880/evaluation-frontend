@@ -24,15 +24,18 @@ body {
   cursor: pointer;
 }
 .slider {
-  width: 80%;
+  width: 70%;
   height: 60vh;
   margin: auto;
   position: relative;
+  z-index: -1;
 }
 .slider img {
   object-fit: cover;
   height: 100%;
   width: 100%;
+  border-radius: 15px;
+  border: 2px solid white;
   position: absolute;
   top: 0;
   left: 0;
