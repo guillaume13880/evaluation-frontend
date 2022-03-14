@@ -4,6 +4,14 @@ let etape = 0;
 let nbrImage = categ1.length;
 let precedent = document.querySelector(".precedent");
 let suivant = document.querySelector(".suivant");
+/*recuperation des bouttons categorie*/
+let btnMariage = document.querySelector("#li-mar");
+let btnGrossesse = document.querySelector("#li-gro");
+let btnBebe = document.querySelector("#li-beb");
+let btnFamille = document.querySelector("#li-fam");
+let btnBapteme = document.querySelector("#li-bap");
+let btnCouple = document.querySelector("#li-cou");
+let btnPortrait = document.querySelector("#li-por");
 
 /* function qui enleve la classe active*/
 function enleverActiveImages() {
@@ -34,7 +42,9 @@ precedent.addEventListener("click", function () {
   categ1[etape].classList.add("active");
 });
 
+/*faire défiler le slider toute les 6s */
 setInterval(function () {
+  /*je recupere la meme etape que suivant */
   etape++;
   if (etape >= nbrImage) {
     etape = 0;
@@ -42,3 +52,16 @@ setInterval(function () {
   enleverActiveImages();
   categ1[etape].classList.add("active");
 }, 6000);
+
+btnMariage.addEventListener("click", function () {
+  categ1[etape].src = "images/categ-1/image-1.jpg";
+  console.log(categ1);
+});
+btnGrossesse.addEventListener("click", function () {
+  categ1[etape].src = "images/categ-2/image-1.jpg";
+  console.log(categ1);
+});
+btnBebe.addEventListener("click", function () {
+  categ1[etape].src = "images/categ-3/image-1.jpg";
+  console.log(categ1);
+});
