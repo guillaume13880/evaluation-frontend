@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Charles Cantin Photographe</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="contact.css" />
   </head>
-  <body>
+  <body id="body-contact">
     <nav class="navbar">
       <button class="burger">
         <span class="bar"></span>
@@ -37,32 +38,52 @@
       </div>
     </nav>
     <main>
-      <small>Enter message (optional) and click button "Send"</small>
-      <div class="wrapper centered">
-        <article class="letter">
-          <div class="side">
-            <h1>Contact us</h1>
-            <p>
-              <textarea placeholder="Your message"></textarea>
-            </p>
+      <div class="card">
+        <p id="sousTitre">Une question? Un conseil?</p>
+        <h2>Contactez-nous</h2>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label>Nom</label>
+              <input type="text" />
+            </div>
           </div>
-          <div class="side">
-            <p>
-              <input type="text" placeholder="Your name" />
-            </p>
-            <p>
-              <input type="email" placeholder="Your email" />
-            </p>
-            <p>
-              <button id="sendLetter">Send</button>
-            </p>
+
+          <div class="col">
+            <div class="form-group">
+              <label>Email</label>
+              <input type="text" />
+            </div>
           </div>
-        </article>
-        <div class="envelope front"></div>
-        <div class="envelope back"></div>
+
+          <div class="col">
+            <div class="form-group">
+              <label>Sujet</label>
+              <input type="text" />
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="form-group">
+              <label>N° de téléphone</label>
+              <input type="text" />
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="form-group">
+              <label>Enter votre message...</label>
+              <textarea></textarea>
+            </div>
+          </div>
+
+          <div class="col">
+            <input type="submit" value="Envoyer" />
+          </div>
+        </div>
       </div>
-      <p class="result-message centered">Thank you for your message</p>
     </main>
     <script src="index.js"></script>
+    <script src="contact.js"></script>
   </body>
 </html>
